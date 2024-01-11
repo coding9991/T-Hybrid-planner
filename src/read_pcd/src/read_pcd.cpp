@@ -22,9 +22,9 @@ int main(int argc,char **argv){
     sensor_msgs::PointCloud2 output2;
     sensor_msgs::PointCloud2 output3;
     //Change all path to the local pcd file path
-    pcl::io::loadPCDFile("/home/nubot/T-Hybrid-planner/src/read_pcd/cloud/cloud_obs.pcd",cloud1);
-    pcl::io::loadPCDFile("/home/nubot/T-Hybrid-planner/src/read_pcd/cloud/cloud_travel.pcd",cloud2);
-    pcl::io::loadPCDFile("/home/nubot/T-Hybrid-planner/src/read_pcd/cloud/cloud_color.pcd",cloud3);
+    pcl::io::loadPCDFile("/home/i/0MasterThesis/Code/Experiment/T-Hybrid-planner/src/read_pcd/cloud/cloud_obs.pcd",cloud1);
+    pcl::io::loadPCDFile("/home/i/0MasterThesis/Code/Experiment/T-Hybrid-planner/src/read_pcd/cloud/cloud_travel.pcd",cloud2);
+    pcl::io::loadPCDFile("/home/i/0MasterThesis/Code/Experiment/T-Hybrid-planner/src/read_pcd/cloud/cloud_color.pcd",cloud3);
     //Convert the cloud to ROS message
     pcl::toROSMsg(cloud1,output1);
     //this has been done in order to be able to visualize our PointCloud2 message on the RViz visualizer
