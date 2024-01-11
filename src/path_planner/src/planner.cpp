@@ -165,7 +165,7 @@ void Planner::setStart(const geometry_msgs::PoseWithCovarianceStamped::ConstPtr&
  
 
   std::ifstream fp;
-  fp.open("/home/nubot/T-Hybrid-planner/src/data/terrainData.txt",std::ios::in);
+  fp.open("/home/i/0MasterThesis/Code/Experiment/T-Hybrid-planner/src/data/terrainData.txt",std::ios::in);
   double voxel[5];
   std::vector<double> voldata;
   std::vector<double> child_data;
